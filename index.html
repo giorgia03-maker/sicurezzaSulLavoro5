@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sicurezza in Fabbrica</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    background-color: #e6e6e6;
+    color: #222;
+}
+
+header {
+    background: linear-gradient(135deg, #2b2b2b, #4f4f4f);
+    color: #f5c400;
+    text-align: center;
+    padding: 50px 20px;
+    border-bottom: 6px solid #f5c400;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.7em;
+}
+
+header p {
+    margin-top: 10px;
+    font-size: 1.2em;
+    color: white;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+section {
+    background: white;
+    border-radius: 8px;
+    margin-bottom: 40px;
+    overflow: hidden;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+    border-left: 8px solid #f5c400;
+    animation: fadeUp 1s ease;
+}
+
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.hero {
+    position: relative;
+}
+
+.hero img {
+    width: 100%;
+    height: 420px;
+    object-fit: cover;
+    filter: grayscale(25%) contrast(1.1);
+}
+
+.hero .overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.55);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #f5c400;
+    padding: 20px;
+}
+
+.hero .overlay h2 {
+    font-size: 2.4em;
+    margin: 0;
+}
+
+.content {
+    padding: 28px;
+}
+
+h2 {
+    color: #000000;
+    margin-top: 0;
+}
+
+ul {
+    padding-left: 22px;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: #f2f2f2;
+    border-radius: 8px;
+    padding: 22px;
+    text-align: center;
+    border-top: 5px solid #f5c400;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 22px rgba(0,0,0,0.25);
+}
+
+.card img {
+    width: 75px;
+    margin-bottom: 15px;
+}
+
+.quiz {
+    text-align: center;
+    padding: 50px 20px;
+    background: repeating-linear-gradient(
+        45deg,
+        #2b2b2b,
+        #2b2b2b 15px,
+        #f5c400 15px,
+        #f5c400 30px
+    );
+    color: white;
+}
+
+.quiz h2 {
+    color: white;
+}
+
+.quiz a {
+    display: inline-block;
+    margin-top: 25px;
+    background-color: #f5c400;
+    color: #2b2b2b;
+    padding: 16px 38px;
+    text-decoration: none;
+    border-radius: 30px;
+    font-size: 1.2em;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.quiz a:hover {
+    background-color: #ffdd33;
+}
+
+footer {
+    background-color: #2b2b2b;
+    color: #f5c400;
+    text-align: center;
+    padding: 18px;
+    font-size: 0.95em;
+}
+
+@media (max-width: 768px) {
+    .hero img {
+        height: 260px;
+    }
+
+    .hero .overlay h2 {
+        font-size: 1.7em;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>🏭 Sicurezza in Fabbrica 🦺</h1>
+    <p>Prevenzione e protezione negli ambienti industriali</p>
+</header>
+
+<div class="container">
+
+<section>
+    <div class="hero">
+        <img src="sicurezza lavoro.webp" alt="Sicurezza in fabbrica">
+        <div class="overlay">
+            <h2>Sicurezza negli Ambienti Industriali</h2>
+        </div>
+    </div>
+    <div class="content">
+        <p>
+            La sicurezza in fabbrica comprende tutte le misure adottate
+            per prevenire infortuni e malattie professionali negli ambienti
+            produttivi.
+        </p>
+    </div>
+</section>
+
+<section>
+    <div class="content">
+        <h2>Principali Rischi Industriali</h2>
+        <div class="cards">
+            <div class="card">
+                <img src="fisico.jpg">
+                <h3>Rischi Fisici</h3>
+                <p>Rumore, vibrazioni, temperature elevate.</p>
+            </div>
+
+            <div class="card">
+                <img src="chimico.png">
+                <h3>Rischi Chimici</h3>
+                <p>Gas, vapori, sostanze tossiche.</p>
+            </div>
+
+            <div class="card">
+                <img src="bio.png">
+                <h3>Rischi Biologici</h3>
+                <p>Batteri e contaminazioni.</p>
+            </div>
+
+            <div class="card">
+                <img src="download.png">
+                <h3>Rischi Meccanici</h3>
+                <p>Macchinari e organi in movimento.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section>
+    <div class="hero">
+        <img src="protezione.png" alt="DPI">
+        <div class="overlay">
+            <h2>Dispositivi di Protezione Individuale</h2>
+        </div>
+    </div>
+    <div class="content">
+        <p>
+            Caschi, guanti, cuffie antirumore, occhiali protettivi e scarpe
+            antinfortunistiche sono indispensabili in fabbrica.
+        </p>
+    </div>
+</section>
+
+<section>
+    <div class="content">
+        <h2>Doveri del Lavoratore</h2>
+        <ul>
+            <li>Rispettare le procedure di sicurezza</li>
+            <li>Usare correttamente i DPI</li>
+            <li>Segnalare situazioni di pericolo</li>
+            <li>Partecipare alla formazione</li>
+        </ul>
+    </div>
+</section>
+
+<section class="piramide">
+    <h2>Guarda questa piramide per maggiori informazioni</h2>
+    <p>Piramide interattiva</p>
+    <a href="https://view.genially.com/69427c3639188a41452eb62f/horizontal-infographic-diagrams-sicurezza-sul-lavoro">
+        🔗 Apri la Piramide sulla Sicurezza sul Lavoro
+    </a>
+</section>
+<section class="quiz">
+    <h2>Metti alla prova le tue conoscenze</h2>
+    <p>Quiz interattivo ambientato nel gioco "chi vuole essere milionario" </p>
+    <a href="https://view.genially.com/69427eaa7e9f71c708c062f0/interactive-content-sicurezza-sul-lavoro-quiz-milionario">
+        🚨 Avvia il Quiz
+    </a>
+</section>
+
+</div>
+
+<footer>
+    © 2025 – Sicurezza in Fabbrica  
+    Ricci Giorgia · Nicola Cifelli · Eugenio D'Onofrio
+</footer>
+
+</body>
+</html>
+
